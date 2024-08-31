@@ -1,0 +1,105 @@
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+header {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #0056b3;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown li {
+    margin: 5px 0;
+}
+
+.dropdown-toggle:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+
+main {
+    flex: 1; /* Permite que el main ocupe el espacio restante */
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-image {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: white;
+}
